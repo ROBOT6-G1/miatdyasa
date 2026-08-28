@@ -1,0 +1,18 @@
+/* Styles générés automatiquement par SUPERSITE - HTML / CSS4 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap');
+
+:root {
+  --primary-color: #6366F1;
+  --secondary-color: #0F172A;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
