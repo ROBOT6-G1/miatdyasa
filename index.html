@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS Digital Studio - Propulsez votre présence en ligne avec des expériences digitales d'impact</title>
+  <meta name="description" content="Agence de conseil et création digitale spécialisée dans le design UI/UX, le développement web haute performance et les stratégies d'acquisition sur-mesure.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366F1',
+            secondary: '#0F172A',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="font-bold text-xl text-primary flex items-center gap-2">
+        <span>✨</span> NEXUS Digital Studio
+      </div>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#hero" class="text-sm font-medium hover:text-primary transition-colors">Accueil</a>
+        <a href="#services" class="text-sm font-medium hover:text-primary transition-colors">Services</a>
+        <a href="#about" class="text-sm font-medium hover:text-primary transition-colors">À propos</a>
+        <a href="#stats" class="text-sm font-medium hover:text-primary transition-colors">Chiffres Clés</a>
+        <a href="#testimonials" class="text-sm font-medium hover:text-primary transition-colors">Témoignages</a>
+        <a href="#contact" class="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+      </nav>
+      <a href="#contact" class="px-4 py-2 bg-primary text-white rounded-lg text-sm font-semibold hover:opacity-90 transition">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="py-20 md:py-32 text-center px-4 bg-gradient-to-b from-primary/10 via-transparent to-transparent">
+      <div class="max-w-4xl mx-auto">
+        <span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-4 border border-primary/20">Agence Créative & Technologique</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">Façonnons ensemble l'avenir de votre marque digitale</h1>
+        <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">Nous accompagnons les startups audacieuses et les entreprises établies dans la conception d'écosystèmes digitaux performants et mémorables.</p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#contact" class="px-6 py-3 bg-primary text-white font-medium rounded-xl shadow-lg shadow-primary/25 hover:opacity-95 transition">Démarrer un projet</a>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-16 px-4 max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-3">Nos Domaines d'Excellence</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-sm">Des solutions complètes à 360° pour concrétiser vos ambitions numériques.</p>
+        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm mt-2">De l'idéation au déploiement, notre équipe pluridisciplinaire vous accompagne à chaque étape clé de votre projet.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1581291518655-9523c932edcf?auto=format&fit=crop&w=600&q=80" alt="Design UI/UX & Identité" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Design UI/UX & Identité</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Création d'interfaces élégantes, intuitives et axées sur l'engagement utilisateur et la conversion.</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Développement Web & Mobile" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Développement Web & Mobile</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Applications web ultra-rapides, plateformes SaaS et boutiques e-commerce optimisées pour la performance.</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Stratégie SEO & Acquisition" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Stratégie SEO & Acquisition</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Optimisation du référencement naturel et campagnes publicitaires ciblées pour maximiser votre visibilité.</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Maintenance & Évolution Cloud" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Maintenance & Évolution Cloud</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Support continu, monitoring proactif et mises à niveau techniques pour une sécurité sans faille.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 px-4 max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-3">Une équipe passionnée par l'innovation</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-sm">Nous fusionnons créativité humaine et rigueur technologique.</p>
+        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm mt-2">Fondée par des experts de l'industrie technologique, NEXUS réunit designers, ingénieurs et stratèges pour concevoir des produits qui transforment durablement les entreprises.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Approche Centrée Utilisateur" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Approche Centrée Utilisateur</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Chaque décision de design découle d'analyses approfondies des besoins réels de votre audience.</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Qualité Sans Compromis" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Qualité Sans Compromis</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Standards de code stricts, audits de sécurité et tests d'accessibilité rigoureux.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="py-16 px-4 max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-3">Des résultats mesurables et durables</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-sm">Notre valeur ajoutée démontrée par les chiffres de nos partenaires.</p>
+        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm mt-2">Nous mesurons notre succès à travers la progression réelle et tangible de nos clients.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            
+            <div class="text-3xl mb-4">briefcase</div>
+            <h3 class="text-xl font-bold mb-2">+150</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Projets livrés avec succès en Europe et à l'international</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            
+            <div class="text-3xl mb-4">smile</div>
+            <h3 class="text-xl font-bold mb-2">98%</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Taux de satisfaction client et renouvellement annuel</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            
+            <div class="text-3xl mb-4">arrow-trending-up</div>
+            <h3 class="text-xl font-bold mb-2">3.8x</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Multiplication moyenne du taux de conversion après refonte</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            
+            <div class="text-3xl mb-4">trophy</div>
+            <h3 class="text-xl font-bold mb-2">12</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Récompenses internationales de design web obtenues</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-16 px-4 max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-3">Ce que nos clients disent de nous</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-sm">Découvrez les retours d'expérience de dirigeants qui nous font confiance.</p>
+        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm mt-2">La collaboration et la transparence sont au cœur de chacune de nos réalisations.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Camille Mercier - Directrice Générale, FinScale" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Camille Mercier - Directrice Générale, FinScale</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">NEXUS a entièrement repensé notre plateforme SaaS. Le résultat est bluffant : un bond immédiat de 45% de nos leads qualifiés dès le premier mois.</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Alexandre Dupont - Fondateur, NovaRetail" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Alexandre Dupont - Fondateur, NovaRetail</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">L'expertise technique de l'équipe et leur compréhension pointue de notre secteur ont fait toute la différence. Un partenaire stratégique exceptionnel.</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80" alt="Sarah Benali - VP Marketing, Aura Health" class="w-full h-44 object-cover rounded-xl mb-4"/>
+            
+            <h3 class="text-xl font-bold mb-2">Sarah Benali - VP Marketing, Aura Health</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Un sens du détail remarquable et une rigueur exemplaire dans le respect des délais. Notre nouvelle identité digitale fait l'unanimité.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4 max-w-3xl mx-auto">
+      <div class="bg-white dark:bg-slate-800/90 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-xl">
+        <div class="text-center mb-6">
+          <h2 class="text-3xl font-bold mb-2">Parlons de votre prochain projet</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Que ce soit pour une refonte globale, un lancement de produit ou un accompagnement stratégique, nous sommes à votre écoute.</p>
+        </div>
+        <form class="space-y-4 text-sm">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold mb-1">Nom complet</label>
+              <input required type="text" name="name" placeholder="Votre nom" class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"/>
+            </div>
+            <div>
+              <label class="block font-semibold mb-1">Email</label>
+              <input required type="email" name="email" placeholder="votre@email.com" class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"/>
+            </div>
+          </div>
+          <div>
+            <label class="block font-semibold mb-1">Message</label>
+            <textarea rows="3" name="message" placeholder="Votre message..." class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 bg-primary text-white font-bold rounded-xl hover:opacity-90 transition">Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer" class="py-16 px-4 max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-3">NEXUS Digital Studio</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-sm">Construire aujourd'hui les standards digitaux de demain.</p>
+        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm mt-2">© 2024 NEXUS Digital. Tous droits réservés. Mentions Légales | Politique de Confidentialité | CGV.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            
+            
+            <h3 class="text-xl font-bold mb-2">Expertises</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">Design UI/UX, Développement Web, SEO, Cloud & DevOps</p>
+          </div>
+          
+        </div>
+        <div class="p-6 bg-white dark:bg-slate-800/80 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            
+            
+            <h3 class="text-xl font-bold mb-2">Réseaux</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">LinkedIn, Twitter / X, Dribbble, GitHub</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="font-semibold text-white mb-2">NEXUS Digital Studio</p>
+      <p class="text-sm mb-6">Agence de conseil et création digitale spécialisée dans le design UI/UX, le développement web haute performance et les stratégies d'acquisition sur-mesure.</p>
+      <p class="text-xs text-slate-500">© 2026 NEXUS Digital Studio. Généré par SUPERSITE IA. Propulsé par Vercel & Supabase Security.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
